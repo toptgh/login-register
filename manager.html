@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>神秘组织首页</title>
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login">
+        <canvas class="canvas-star"></canvas>
+        <h1>欢迎<span>xxx</span>! 来到神秘组织</h1>
+    </div>
+    <script src="js/star.js"></script>
+    <script>
+        starBg.init('.canvas-star');
+        var $span = document.querySelector('span');
+        $span.innerHTML=getCookie('username');
+        //获取cookie的用户名
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+       
+    </script>
+</body>
+
+</html>
