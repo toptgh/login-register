@@ -26,7 +26,7 @@ var register = (function(){
                         _this.register(data);
                     }
                 }
-                sendAjax('http://localhost:1012/admin/php/register.php', params);
+                sendAjax('php/register.php', params);
             },
             // 判断用户名称是否存在
             this.$usernameInp. addEventListener('change', function(){
@@ -36,11 +36,12 @@ var register = (function(){
                         username: _this.$usernameInp.value
                     },
                     success: function(data) {
+                        console.log(data);
                         data = JSON.parse(data);
                         _this.checkUsername(data);
                     }
                 }
-                sendAjax('http://localhost:1012/admin/php/check_username.php', params);
+                sendAjax('php/check_username.php', params);
             }, false);
         },
         checkUsername: function(data) {
@@ -58,9 +59,7 @@ var register = (function(){
                 //   注册成功
                 alert('注册成功！请返回登录');
                 window.location.href='login.html';
-             } else {
-                alert('请不要重复点击');
-             }
+             } 
         }
     }
 

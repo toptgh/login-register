@@ -25,7 +25,7 @@
       $result = $coon -> Query($insert_sql, 3);
       if($result) {
         //   注册成功
-        $arr = array("code" => "200", "msg" => "");
+        $arr = array("code" => "200", "msg" => "1");
       } else {
         //   注册失败
         $arr = array("code" => "1001", "msg" => "注册失败,未知原因");

@@ -23,11 +23,13 @@ var login = (function () {
                         password: _this.$passwordInp.value
                     },
                     success: function (data) {
+                        console.log(data);
+                        console.log(JSON.parse(data));
                         data = JSON.parse(data);
                         _this.loginSuccess(data);
                     }
                 }
-                sendAjax('http://localhost:1012/admin/php/login.php', params);
+                sendAjax('php/login.php', params);
             }
         },
 
