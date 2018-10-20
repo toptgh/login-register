@@ -5,12 +5,4 @@
 
 2.开启Mysql数据库，数据库在目录有，直接导入即可
 
-**预览地址**：[](http://www.tgh1997.club/login-register/register.html)
-
-**预览图片：**
-
-![](C:\Users\toptgh\Desktop\regist.png)
-
-
-
-![](C:\Users\toptgh\Desktop\login.png)
+**预览地址**：http://www.tgh1997.club/login-register/register.html
